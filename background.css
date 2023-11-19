@@ -11,18 +11,18 @@
 
 .stars {
 	z-index: 0;
-	background: #000 url('background/stars.png') repeat top center;
+	background: #000 url('assets/background/stars.png') repeat top center;
 }
 
 .twinkling{
 	z-index: 1;
-	background:transparent url('background/stars2.png') repeat top center;
+	background:transparent url('assets/background/stars2.png') repeat top center;
 	animation: move-twink-back 200s linear infinite;
 }
 
 .clouds{
 	z-index: 2;
-    background:transparent url('background/clouds.png') repeat top center;
+    background:transparent url('assets/background/clouds.png') repeat top center;
 	animation: move-clouds-back 200s linear infinite;
 }
 
