@@ -32,7 +32,7 @@ body {
     font-size: 20px;
 }
 
-.navbar {
+#navbar {
     z-index: 4;
     padding: 20px 5%;
     width: 80%;
@@ -94,12 +94,26 @@ main {
 }
 
 #scroll-down {
-    bottom: 15%!important;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    position: sticky;
+    bottom: 25px!important;
     height: 50px;
     width: 30px;
-    border: 2px solid white;
-    border-radius: 50px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px); /* Adjust the value to change the distance */
+    }
 }
 
 #about {
@@ -176,6 +190,16 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#backUp {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 20%;
 }
 
 #socials {
