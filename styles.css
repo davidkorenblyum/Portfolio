@@ -48,6 +48,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 30px;
+    padding-right: 25px;
 }
 
 .nav-route {
@@ -112,7 +113,7 @@ main {
         transform: translateY(0);
     }
     to {
-        transform: translateY(-20px); /* Adjust the value to change the distance */
+        transform: translateY(-20px);
     }
 }
 
@@ -191,6 +192,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #backUp {
