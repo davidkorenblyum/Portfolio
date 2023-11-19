@@ -7,6 +7,19 @@ html {
     background: grey;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-90%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 body {
     background-color: black;
     margin: 0px;
@@ -72,15 +85,25 @@ main {
 .landing {
     box-sizing: border-box;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12vh;
+    margin-bottom: 60px;
+}
+
+#scroll-down {
+    bottom: 15%!important;
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 #about {
-    margin-top: 15vh;
+    margin-top: 18vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -90,7 +113,7 @@ main {
 
 .label {
     font-size: 45px!important;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #content-me {
@@ -119,18 +142,8 @@ main {
     margin-left: 0px!important;
 }
 
-#resume {
-    height: 500px;
-    width: 100%;
-    margin-top: 15vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 #projects {
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,11 +170,19 @@ main {
 }
 
 #contact {
-    margin-top: 15vh;
     width: 100%;
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#socials {
+    margin: 40px 0px 20px 0px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
 }

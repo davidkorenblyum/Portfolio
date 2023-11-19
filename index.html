@@ -6,8 +6,8 @@
     <title>David Korenblyum</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="background.css" />
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <div class="stars"></div>
@@ -28,12 +28,12 @@
                 <a href="#contact">./contact</a>
             </li>
             <li>
-                <a href="https://docs.google.com/document/d/1XrzOVnBWsQeyqAbNEGewI4yRtI9akkZggbaR2htjXPY/edit?usp=sharing">./resume</a>
+                <a href="https://drive.google.com/file/d/1xHZZFLrgX01aaxIyvrD47qbKRIV6oTNn/view?usp=sharing" target="_blank">./resume</a>
             </li>
         </ul>
     </header>
     <main>
-        <div class="landing">
+        <div class="landing hidden">
             <span class="auto-type"></span>
         </div>
 
@@ -45,65 +45,91 @@
                 backSpeed: 70,
                 loop: true
                 });
-            }, 400);
+            }, 600);
         </script>
 
+        <!-- <div id="scroll-down"></div> -->
+
         <div id="about">
-            <h2 class="label">
+            <h2 class="label hidden">
                 About Me
             </h2>
-            <div id="content-me">
-                <img src="images/monkey.jpg" width="400px" style="margin-left: 20px; border-radius: 15%;">
+            <div class="hidden" id="content-me">
+                <img src="images/pro1.png" width="400px" style="margin-left: 20px; border-radius: 15%;">
                 <div id="bio">
                     <p style="font-size: 35px; margin-bottom: 10px;">
-                        Hey there,
+                        Hi there,
                     </p>
                     <p class="paragraphs">
-                        My name is David Korenblyum and I'm a Software Engineer at Avanade.
-                    </p>
-                    <p class="paragraphs">
-                        In 2023, I graduated from UMass Amherst with a degree in Computer Engineering.
-                    </p>
-                    <p class="paragraphs">
+                        My name is David Korenblyum and I'm a Software Engineer at <a href="https://www.avanade.com/" target="_blank" rel="noopener noreferrer" style="color: white;">Avanade</a>, a joint venture between Accenture and Microsoft. 
+                        In 2023, I graduated from UMass Amherst with a degree in Computer Engineering, 
+                        where I was mainly working with C, C++, and Java.
                         Right now, I'm primarily working with technologies like Python, .Net, and TypeScript.
                     </p>
                     <p class="paragraphs">
-                        Outside of coding, I'm into fitness, video games, and playing with my cat named Bimbus. 
+                        In my free time, I'm into fitness, video games, and playing with my cat named Bimbus. 
+                        I also generally enjoy working on side projects to learn new tools and frameworks that will make me a better developer.
+                    </p>
+                    <p class="paragraphs">
+                        If you're looking to contact me to talk about experiences, opportunities, or just to chat, feel free 
+                        to send me an email or connect on LinkedIn!
                     </p>
                 </div>
             </div>
             
         </div>
         <div id="projects">
-            <h3 class="label">
+            <h3 class="label hidden">
                 Projects
             </h3>
-            <div class="project">
-                <img src="images/quantumGates.png" width="400px" style="margin-left: 20px; border-radius: 10%;">
+            <div class="project hidden">
+                <img src="images/qubit1.png" width="400px" style="margin-left: 20px; border-radius: 10%;">
                 <div class="description">
                     <p class="paragraphs">
                         For our final project in my Quantum Computing course, my teammate and I explored the 
-                        Deutsch-Jozsa Algorithm by simulating a quantum computer with a superconducting-loop architecture 
-                        in Python using QuTiP and Quiskit, alongside IBM Quantum services.
+                        Deutsch-Jozsa Algorithm by simulating a quantum computer in Python using QuTiP and Quiskit, 
+                        alongside IBM Quantum services.
                     </p>
                     <p class="paragraphs">
                         It's an elegant demonstration of quantum superiority over traditional computers in solving a black-box problem.
                     </p>
                     <p class="paragraphs">
-                        Check it out <a href="https://github.com/davidkorenblyum/Quantum-Computation-of-the-Deutsch-Jozsa-Algorithm" target="_blank" style="color: white;">here</a>.
+                        Check it out <a href="https://github.com/davidkorenblyum/Quantum-Computation-of-the-Deutsch-Jozsa-Algorithm" target="_blank" rel="noopener noreferrer" style="color: white;">here</a>.
                     </p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project hidden">
                 <p class="paragraphs" style="margin-top: 100px; width: 100%;">
-                    I'm working on two bigger projects now, check back here once they're completed.
+                    I'm working on two bigger projects now, check back here later for those.
                 </p>
             </div>
         </div>
         <div id="contact">
-            <p>
-                This is about me.
+            <h4 class="label hidden" style="margin-bottom: 20px;">
+                Contact
+            </h4>
+            <p class="paragraphs hidden">
+                The best way to reach me is via <a href="mailto:dakorenblyum@gmail.com" style="color: white;">email</a> (dakorenblyum@gmail.com). I will typically respond within a day.
             </p>
+            <p class="paragraphs hidden">
+                You can also connect with me on <a href="https://www.linkedin.com/in/davidkorenblyum/" target="_blank" rel="noopener noreferrer" style="color: white;">LinkedIn</a>,
+                or check out my projects on <a href="https://github.com/davidkorenblyum" target="_blank" rel="noopener noreferrer" style="color: white;">Github</a>.
+            </p>
+            <img src="images/monkey.jpg" class="hidden" width="400px" style="border-radius: 15%; margin: 100px 0px;">
+            <p class="paragraphs hidden">
+                Thanks for stopping by!
+            </p>
+            <div id="socials">
+                <a href="mailto:dakorenblyum@gmail.com">
+                    <img src="/images/email.png" alt="Email" width="48" height="52">
+                </a>
+                <a href="https://www.linkedin.com/in/davidkorenblyum/" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/linkedin1.png" alt="LinkedIn Profile" width="40" height="40">
+                </a>
+                <a href="https://github.com/davidkorenblyum" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/github1.png" alt="Github Profile" width="40" height="40">
+                </a>
+            </div>
         </div>
     </main>
 </body>
