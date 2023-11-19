@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="background.css" />
     <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <div class="stars"></div>
@@ -21,26 +22,51 @@
                 <a href="#about">./about</a>
             </li>
             <li>
-                <a href="#drivelink">./resume</a>
-            </li>
-            <li>
                 <a href="#projects">./projects</a>
             </li>
             <li>
                 <a href="#contact">./contact</a>
             </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1XrzOVnBWsQeyqAbNEGewI4yRtI9akkZggbaR2htjXPY/edit?usp=sharing">./resume</a>
+            </li>
         </ul>
     </header>
     <main>
-        <div id="landing">
-            <p>
-                Hi
-            </p>
+        <div class="landing">
+            <span class="auto-type"></span>
         </div>
+
+        <script>
+            setTimeout(() => {
+                var typed = new Typed('.auto-type', {
+                strings: ["Hello :)", "This is my portfolio.", "Have a look around."],
+                typeSpeed: 100,
+                backSpeed: 70,
+                loop: true
+                });
+            }, 400);
+        </script>
+
         <div id="about">
-            <p>
-                This is about me.
-            </p>
+            <img src="images/monkey.jpg" width="400px" style="margin-left: 20px; border-radius: 15%;">
+            <div id="bio">
+                <p style="font-size: 35px; margin-bottom: 10px;">
+                    Hey there,
+                </p>
+                <p class="paragraphs">
+                    My name is David Korenblyum and I'm a Software Engineer at Avanade.
+                </p>
+                <p class="paragraphs">
+                    In 2023, I graduated from UMass Amherst with a degree in Computer Engineering.
+                </p>
+                <p class="paragraphs">
+                    Right now, I'm primarily working with technologies like Python, .Net, and TypeScript.
+                </p>
+                <p class="paragraphs">
+                    Outside of coding, I'm into fitness, video games, and playing with my cat Bimbus. 
+                </p>
+            </div>
         </div>
         <div id="projects">
             <p>

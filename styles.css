@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+}
+
 body {
     background-color: black;
     margin: 0px;
@@ -60,5 +65,54 @@ main {
     height: 100%;
 }
 
+.landing {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12vh;
+}
+
+#about {
+    height: 500px;
+    width: 100%;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    padding-left: 5vw!important;
+    padding: 5px;
+    margin: 0px;
+    margin-right: 15px!important;
+}
+
+.paragraphs {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 0px!important;
+}
+
+#resume {
+
+}
+
+#projects{
+    height: 500px;
+}
+
+#contact {
+    height: 500px;
+}
 
 /* height: 100vh; is it  */
