@@ -1,3 +1,3 @@
 # Portfolio
 
-[korenblyum.com](https://www.korenblyum.com)
+[Website](https://davidkorenblyum.github.io/Portfolio/)
