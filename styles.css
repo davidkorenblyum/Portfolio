@@ -1,6 +1,10 @@
 html {
+    width: 100vw;
     scroll-behavior: smooth;
     scroll-padding: 0rem;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 ::selection {
@@ -21,7 +25,7 @@ html {
 }
 
 body {
-    background-color: black;
+    width: 100%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -36,11 +40,11 @@ body {
     z-index: 4;
     padding: 20px 5%;
     width: 80%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0);
 }
 
 #name {
@@ -74,7 +78,8 @@ body {
 
 main {
     z-index: 5;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +95,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12vh;
+    font-size: 7vw;
     margin-bottom: 60px;
 }
 
@@ -99,7 +104,7 @@ main {
     color: white;
     text-decoration: none;
     position: sticky;
-    bottom: 25px!important;
+    bottom: 8vh!important;
     height: 50px;
     width: 30px;
     cursor: pointer;
@@ -158,6 +163,7 @@ main {
 }
 
 #projects {
+    width: 100%;
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -185,7 +191,7 @@ main {
 }
 
 #contact {
-    width: 90%;
+    width: 100%;
     margin-top: 10vh;
     margin-bottom: 25px;
     display: flex;
@@ -212,4 +218,92 @@ main {
     flex-direction: row;
     align-items: start;
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1025px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 4vh;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #name {
+        font-size: 4.5vh;
+        padding: 0;
+        margin: 0;
+        padding-top: 2vh;
+    }
+
+    .nav-route {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        padding: 0px;
+    }
+    
+    .nav-route li {
+        padding: 10px;
+        margin: 2px;
+    }
+    
+    .nav-route a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+
+    .landing {
+        height: 40vh;
+        margin-bottom: 25vh;
+    }
+
+    #about, #projects, #contact {
+        margin-top: 1vh;
+    }
+
+    #about img, #projects img, #contact img {
+        width: 80%;
+    }
+
+    #about {
+        margin-top: 10vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #content-me {
+        flex-direction: column;
+    }
+
+    #bio {
+        width: 80%;
+    }
+
+    #projects {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    #contact .paragraphs {
+        width: 80%;
+    }
+
+    #socials {
+        width: 90%;
+    }
+
+    #socials img {
+        width: 100%;
+    }
 }
