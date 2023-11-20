@@ -11,7 +11,7 @@
 
 .stars {
 	z-index: 0;
-	background: #000 url('assets/background/stars.png') repeat top center;
+	background: #000000 url('assets/background/stars.png') repeat top center;
 }
 
 .twinkling{
