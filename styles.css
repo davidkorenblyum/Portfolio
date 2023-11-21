@@ -77,6 +77,10 @@ body {
     font-size: 20px;
 }
 
+.nav-route i {
+    font-size: 20px;
+}
+
 
 /* main */
 
@@ -115,6 +119,7 @@ main {
     text-align: center;
     justify-content: center;
     animation: moveUpDown 1s ease-in-out infinite alternate;
+    display: none;
 }
 
 @keyframes moveUpDown {
@@ -136,7 +141,7 @@ main {
 }
 
 .label {
-    font-size: 45px!important;
+    font-size: 45px;
     padding-bottom: 10px;
 }
 
@@ -229,17 +234,19 @@ main {
     justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1100px) {
+    body {
+        font-size: 35px;
+    }
+
     #navbar {
         flex-direction: column;
         width: 100%;
-        padding-top: 4vh;
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 4vh 0 0 0;
     }
 
     #name {
-        font-size: 4.5vh;
+        font-size: 6vh;
         padding: 0;
         margin: 0;
         padding-top: 2vh;
@@ -258,12 +265,21 @@ main {
     }
     
     .nav-route a {
-        font-size: 2.5vh;
+        font-size: 40px;
     }
+    
+    .nav-route i {
+        font-size: 32px;
+    }
+
 
     .landing {
         height: 40vh;
         margin-bottom: 25vh;
+    }
+
+    .label {
+        font-size: 60px;
     }
 
     #about, #projects, #contact {
@@ -271,7 +287,8 @@ main {
     }
 
     #about img, #projects img, #contact img {
-        width: 80%;
+        width: 60%;
+        margin-bottom: 35px;
     }
 
     #about {
@@ -286,6 +303,11 @@ main {
 
     #bio {
         width: 80%;
+    }
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 60px;
     }
 
     #projects {
@@ -310,14 +332,23 @@ main {
         width: 90%;
     }
 
+    #backUp {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     #socials img {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 450px) {
+    body {
+        font-size: 20px;
+    }
+    
     #name {
-        font-size: 4.5vh;
+        font-size: 4vh;
         padding: 0;
         margin: 0;
         padding-top: 2vh;
@@ -326,12 +357,35 @@ main {
     .nav-route a {
         color: white;
         text-decoration: none;
-        font-size: 2.5vh;
+        font-size: 23px;
     }
 
-    /* .label {
-        font-size: 
-    } */
+    .nav-route i {
+        font-size: 20px;
+    }
 
+    .landing {
+        margin-bottom: 20vh;
+    }
 
+    #about, #projects, #contact {
+        margin-top: 1vh;
+    }
+
+    #about img, #projects img, #contact img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    #about h2 {
+        margin-top: 9.2vh;
+    }
+
+    .label {
+        font-size: 40px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
 }
