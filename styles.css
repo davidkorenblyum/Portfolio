@@ -5,6 +5,7 @@ html {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 ::selection {
@@ -34,7 +35,9 @@ body {
     font-family: monospace;
     color: white;
     font-size: 20px;
-    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
 }
 
 #navbar {
