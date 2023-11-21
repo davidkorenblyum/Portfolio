@@ -22,9 +22,13 @@ window.addEventListener('resize', hideParagraphsOnMobile);
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        const landingElement = document.querySelector('.landing');
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
+        } else {
+            if (landingElement && entry.target === landingElement) {
+                entry.target.classList.remove('show');
+            }
         }
     });
 }, { threshold: .025 });
@@ -38,7 +42,7 @@ const elementToShow = document.getElementById('scroll-down');
 function showElementDelayed() {
     setTimeout(function() {
         elementToShow.style.display = 'inline';
-    }, 10000); 
+    }, 9675); 
 }
 
 showElementDelayed();
