@@ -178,7 +178,7 @@ main {
 
 #projects {
     width: 100%;
-    margin-top: 10vh;
+    margin-top: 9.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,13 +206,17 @@ main {
 
 #contact {
     width: 100%;
-    margin-top: 10vh;
+    margin-top: 9.5vh;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#contact h4 {
+    margin-top: 45px;
 }
 
 #backUp {

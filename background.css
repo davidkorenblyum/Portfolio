@@ -10,20 +10,17 @@
 }
 
 .stars {
-	/* width: 390px; */
 	z-index: 0;
 	background: #000000 url('assets/background/stars.png') repeat top center;
 }
 
 .twinkling{
-	/* width: 390px; */
 	z-index: 1;
 	background:transparent url('assets/background/stars2.png') repeat top center;
 	animation: move-twink-back 200s linear infinite;
 }
 
 .clouds{
-	/* width: 390px; */
 	z-index: 2;
     background:transparent url('assets/background/clouds.png') repeat top center;
 	animation: move-clouds-back 200s linear infinite;
