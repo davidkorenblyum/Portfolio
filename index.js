@@ -1,3 +1,7 @@
+if (window.location.hash) {
+    history.replaceState(null, null, window.location.href.split('#')[0]);
+}
+
 function isMobile() {
     return window.matchMedia("only screen and (max-width: 767px)").matches;
 }
